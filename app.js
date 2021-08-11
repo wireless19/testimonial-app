@@ -20,11 +20,6 @@ app.use(express.static("public"));
 //     useUnifiedTopology: true,
 // });
 
-// mongoose.connect("mongodb+srv://admin-victor:test123@cluster0.lbgby.mongodb.net/testimonialDB", {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-// });
-
 mongoose.connect(process.env.MONGO_USERLINK, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
