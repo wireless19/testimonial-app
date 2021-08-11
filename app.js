@@ -88,14 +88,6 @@ app.get("/", function (req, res) {
 
     });
 
-    // Testimony.find({}, (err, testimonies) => {
-
-    //     res.render("home", {
-    //         testimonies: testimonies,
-    //         smessage: ""
-
-    //     });
-    // });
 });
 
 app.post("/", function (req, res) {
@@ -104,17 +96,6 @@ app.post("/", function (req, res) {
         location: req.body.place,
         stories: req.body.story
     });
-
-    // story.save((err) => {
-    //     if(err) throw err;
-
-    //         res.render("home", {
-    //             smessage: "Story shared successfully"
-    //         });
-    //         // res.redirect("/");
-
-    //     }
-    // });
 
     story.save((err) => {
         if (err) {
@@ -128,24 +109,12 @@ app.post("/", function (req, res) {
                     smessage: "Story shared successfully"
 
                 });
-                // res.redirect("/");
 
             });
         }
 
     });
 
-    // story.save((err) => {
-    //     if (!err) {
-    //         // const smessage = "Story shared successfully"
-
-
-    //         res.redirect("/");
-    //         res.render("home", {
-    //             smessage: "Story shared successfully"
-    //         });
-    //     }
-    // });
 
 });
 
