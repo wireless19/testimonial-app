@@ -25,6 +25,14 @@ ul .btn {
     border-color: #0064ba;
 }
 
+.card .card-body img {
+    border-radius: 100%;
+    box-shadow: #000000;
+    
+    width: 175px;
+    height: 180px;
+}
+
 .navbar-brand {
     color: #2c3e50;
     font-family: 'Raleway',
